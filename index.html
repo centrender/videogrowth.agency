@@ -6,6 +6,53 @@
   <title>VideoGrowth.Agency — Daily AI Short Videos</title>
   <meta name="description" content="Daily AI short videos for local businesses. We script, render, caption, and auto-post your Reels, TikToks, and Shorts.">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --blue: #1E90FF;
+      --black: #111;
+      --gray: #666;
+      --bg: #fff;
+    }
+    body {font-family: Inter, sans-serif; color: var(--black); margin:0; padding:0; background:var(--bg);}
+    a {text-decoration:none; color:inherit;}
+    .container {width:90%; max-width:1100px; margin:0 auto;}
+    .accent {color: var(--blue);}
+    h1, h2, h3 {font-weight:700; margin:0 0 10px;}
+    p {color:var(--gray); margin:0 0 15px;}
+    section {padding:50px 0;}
+    .nav {position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #eee;}
+    .nav-inner {display:flex;align-items:center;justify-content:space-between;height:70px;}
+    .nav-links a {margin-left:20px;font-weight:500;}
+    .btn-nav {background:var(--blue);color:#fff;padding:10px 18px;border-radius:8px;}
+    .hero {text-align:center;padding:70px 0 50px;}
+    .hero-title {font-size:2.2rem;line-height:1.3;margin-bottom:20px;}
+    .hero-sub {max-width:550px;margin:0 auto 30px;font-size:1rem;}
+    .actions a {display:inline-block;margin:5px 10px;padding:12px 22px;border-radius:8px;font-weight:600;}
+    .btn-primary {background:var(--blue);color:#fff;}
+    .btn-outline {border:2px solid var(--blue);color:var(--blue);}
+    .hero-video video {width:100%;max-width:600px;border-radius:10px;margin:25px 0;}
+    .bullets {display:flex;justify-content:center;gap:15px;font-size:.9rem;color:var(--gray);}
+    .pricing {background:#fafafa;text-align:center;}
+    .plans {display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:30px;}
+    .plan {background:#fff;border:1px solid #eee;border-radius:12px;padding:25px;width:300px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+    .plan.highlight {border:2px solid var(--blue);}
+    .plan.highlight::before {content:"Best Value";display:block;background:var(--blue);color:#fff;font-size:.8rem;font-weight:600;padding:5px;border-radius:6px;margin-bottom:10px;}
+    .price {font-size:1.6rem;font-weight:700;margin:10px 0;}
+    .plan ul {list-style:none;padding:0;margin:0 0 20px;color:var(--gray);}
+    .plan li {margin-bottom:6px;}
+    .plan a {display:inline-block;padding:12px 18px;border-radius:8px;font-weight:600;}
+    .portfolio {background:#fff;text-align:center;}
+    .subhead {color:var(--gray);margin-bottom:25px;}
+    .samples {display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+    .sample {width:300px;}
+    video {width:100%;border-radius:10px;}
+    .faq {background:#fafafa;text-align:center;padding:50px 0 40px;}
+    details {background:#fff;border:1px solid #ddd;border-radius:8px;margin:10px auto;max-width:700px;padding:10px 15px;text-align:left;}
+    summary {font-weight:600;cursor:pointer;}
+    .fab-cta {position:fixed;bottom:20px;right:20px;background:var(--blue);color:#fff;padding:14px 22px;border-radius:50px;font-weight:600;box-shadow:0 2px 10px rgba(0,0,0,.2);}
+    .footer {text-align:center;padding:30px 0;font-size:.9rem;color:var(--gray);}
+    @media (max-width:768px){.plans{flex-direction:column;align-items:center;}.sample{width:90%;}}
+  </style>
 </head>
 <body>
 
@@ -17,29 +64,20 @@
         <a href="#pricing">Pricing</a>
         <a href="#work">Portfolio</a>
         <a href="#faq">FAQ</a>
-        <a class="btn-nav"
-           href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602"
-           target="_blank" rel="noopener">Start with Growth — $397/mo</a>
+        <a class="btn-nav" href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602" target="_blank" rel="noopener">Start with Growth — $397/mo</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero hero-center" id="top">
+  <section class="hero hero-center">
     <div class="container">
       <h1 class="hero-title">Daily AI short videos for your business.<br><span class="accent">Local leads on autopilot.</span></h1>
-      <p class="hero-sub">We script, design, render, caption, and auto-post your Reels/TikToks/Shorts. You approve. We handle the rest.</p>
+      <p class="hero-sub">We create short-form videos using AI that attract local clients automatically. You approve — we handle scripting, visuals, and posting.</p>
 
       <div class="actions actions-center">
-        <!-- Primary sale -->
-        <a class="btn btn-primary"
-           href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602"
-           target="_blank" rel="noopener">Start with Growth — $397/mo</a>
-
-        <!-- Secondary lead-gen -->
-        <a class="btn btn-outline"
-           href="https://forms.gle/SeNFEzkRerPg5pSL7"
-           target="_blank" rel="noopener">Get 3 Free Samples</a>
+        <a class="btn btn-primary" href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602" target="_blank" rel="noopener">Start with Growth — $397/mo</a>
+        <a class="btn btn-outline" href="https://forms.gle/SeNFEzkRerPg5pSL7" target="_blank" rel="noopener">Get 3 Free Samples</a>
       </div>
 
       <div class="hero-video">
@@ -63,7 +101,6 @@
       <p>All plans include scripts, captions, branding, scheduling, and analytics export.</p>
 
       <div class="plans">
-        <!-- Starter -->
         <div class="plan">
           <h3>Starter</h3>
           <p class="price">$197<span>/mo</span></p>
@@ -72,11 +109,9 @@
             <li>2 posts per week</li>
             <li>1 brand kit</li>
           </ul>
-          <a href="https://buy.stripe.com/4gM8wO6063X93vk8Ieg3603"
-             class="btn btn-outline" target="_blank" rel="noopener">Subscribe</a>
+          <a href="https://buy.stripe.com/4gM8wO6063X93vk8Ieg3603" class="btn btn-outline" target="_blank">Subscribe</a>
         </div>
 
-        <!-- Growth (highlighted default) -->
         <div class="plan highlight">
           <h3>Growth</h3>
           <p class="price">$397<span>/mo</span></p>
@@ -85,11 +120,9 @@
             <li>5 posts per week</li>
             <li>2 brand kits</li>
           </ul>
-          <a href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602"
-             class="btn btn-primary" target="_blank" rel="noopener">Start with Growth — $397/mo</a>
+          <a href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602" class="btn btn-primary" style="white-space:normal;line-height:1.2;text-align:center;" target="_blank">Start with Growth<br>— $397</a>
         </div>
 
-        <!-- Domination -->
         <div class="plan">
           <h3>Domination</h3>
           <p class="price">$997<span>/mo</span></p>
@@ -98,8 +131,7 @@
             <li>2 posts per day</li>
             <li>Priority support</li>
           </ul>
-          <a href="https://buy.stripe.com/dRm5kC9ci0KX8PE0bIg3600"
-             class="btn btn-outline" target="_blank" rel="noopener">Subscribe</a>
+          <a href="https://buy.stripe.com/dRm5kC9ci0KX8PE0bIg3600" class="btn btn-outline" target="_blank">Subscribe</a>
         </div>
       </div>
     </div>
@@ -109,7 +141,7 @@
   <section class="portfolio" id="work">
     <div class="container">
       <h2>Sample Videos</h2>
-      <p class="subhead">Real formats your customers scroll every day. Vertical, branded, captioned, and ready to post.</p>
+      <p class="subhead">Examples of real short videos made for different niches — med spa, real estate, and auto detailers. Your clips replace these anytime.</p>
 
       <div class="samples">
         <div class="sample">
@@ -118,14 +150,12 @@
             <source src="assets/sample-medspa.mp4" type="video/mp4">
           </video>
         </div>
-
         <div class="sample">
           <h3>Real Estate — New Listing</h3>
           <video controls muted playsinline poster="assets/cover-re.jpg">
             <source src="assets/sample-realestate.mp4" type="video/mp4">
           </video>
         </div>
-
         <div class="sample">
           <h3>Auto Detailer — Ceramic Coat</h3>
           <video controls muted playsinline poster="assets/cover-auto.jpg">
@@ -140,30 +170,24 @@
   <section class="faq" id="faq">
     <div class="container">
       <h2>FAQ</h2>
-
       <details open>
         <summary>What tools power the videos?</summary>
         <p>Scripts by GPT-4. Rendering via automation templates. Auto-scheduling to social platforms. Human review optional.</p>
       </details>
-
       <details>
         <summary>Can you use my own photos or clips?</summary>
-        <p>Yes. Upload in the intake form and we compose videos around your assets with logo and brand colors.</p>
+        <p>Yes. Upload in the form — we integrate your visuals, logo, and colors seamlessly.</p>
       </details>
-
       <details>
         <summary>How fast do you deliver?</summary>
-        <p>First drafts within 24–48 hours after assets are received.</p>
+        <p>First drafts within 24–48 hours. Monthly content drops posted automatically.</p>
       </details>
     </div>
   </section>
 
-  <!-- Floating buy button -->
-  <a class="fab-cta"
-     href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602"
-     target="_blank" rel="noopener">Start with Growth — $397/mo</a>
+  <!-- Floating CTA -->
+  <a class="fab-cta" href="https://buy.stripe.com/bJebJ01JQalx7LA3nUg3602" target="_blank">Start with Growth — $397</a>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>© <span id="y"></span> VideoGrowth.Agency</p>
   </footer>
@@ -171,5 +195,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
